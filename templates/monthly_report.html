@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Summary Report</title>
+</head>
+<body>
+    <h1>Monthly Summary Report</h1>
+    <h2>Summary</h2>
+    <p>Total Books: {{ total_books }}</p>
+    <p>Total Sections: {{ total_sections }}</p>
+    <p>Total Users: {{ total_users }}</p>
+    <h2>Feedback Received</h2>
+    <ul>
+        {% for feedback in feedback_received %}
+            <li>{{ feedback.feedback }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
